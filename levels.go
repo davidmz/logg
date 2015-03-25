@@ -51,7 +51,7 @@ func LevelByName(name string) (Level, error) {
 }
 
 // String converts Level value to string
-func (l Level) String() string { return levelNames[l] }
+func (l *Level) String() string { return levelNames[*l] }
 
 // Set obtains Level value from string
 func (l *Level) Set(s string) error {
